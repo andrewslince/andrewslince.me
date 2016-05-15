@@ -1,0 +1,137 @@
+@font-face{ 
+    font-family: 'TitilliumWeb';
+    src: url('../font/titilliumweb-regular.eot');
+    src: url('../font/titilliumweb-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/titilliumweb-regular.woff') format('woff'),
+         url('../font/titilliumweb-regular.ttf') format('truetype'),
+         url('../font/titilliumweb-regular.png#webfont') format('png');
+}
+
+body {
+    background: url('../img/bg.jpeg');
+    background-size: cover;
+    font-family: 'TitilliumWeb';
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #fb8713;
+    font-family: 'Times New Roman', serif;
+    font-size: 39px;
+    font-weight: normal;
+}
+
+h2 {
+    border-top: 1px burlywood dotted;
+    color: burlywood;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: -20px auto 0 auto;
+    padding: 11px;
+    text-transform: uppercase;
+    width: 55%;
+}
+
+h5 {
+    color: #fb8713;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#centered {
+    background: #000;
+    left: 50%;
+    margin: 100px 0;
+    opacity: .95;
+    padding: 40px 40px 30px 40px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 600px;
+}
+
+#about {
+    color: #fff;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+#avatar {
+    border-radius: 200px;
+}
+
+#social-networks {
+    display: inline-flex;
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+#social-networks li {
+    display: inline-flex;
+    margin: 0 5px;
+}
+
+#social-networks .sn {
+    background: burlywood url('../img/sn-sprite2.png') no-repeat;
+    border-radius: 100px;
+    color: transparent;
+    display: inline-block;
+    height: 24px;
+    padding: 9px;
+    width: 24px;
+}
+
+.fb {
+    background-position: -1px 9px !important;
+}
+
+.gh {
+    background-position: -35px 9px !important;
+}
+
+.go {
+    background-position: -1px -25px !important;
+}
+
+.ig {
+    background-position: -35px -25px !important;
+}
+
+.in {
+    background-position: -1px -59px !important;
+}
+
+.lfm {
+    background-position: -34px -59px !important;
+}
+
+#social-networks .sn:hover {
+    background-color: #fb8713;
+}
+
+/**
+ * Firefox fixes
+ */
+@-moz-document url-prefix() { 
+    body {
+        padding: 10%;
+    }
+
+    h2 {
+        letter-spacing: 0;
+    }
+
+    #centered {
+        margin: 10% 0;
+    }
+}
