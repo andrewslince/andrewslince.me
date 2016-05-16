@@ -1,0 +1,16 @@
+/**
+ * Firefox fixes
+ */
+@-moz-document url-prefix() { 
+    body {
+        padding: 32% 0;
+    }
+
+    h2 {
+        letter-spacing: 0;
+    }
+
+    #centered {
+        margin: 10% 0;
+    }
+}

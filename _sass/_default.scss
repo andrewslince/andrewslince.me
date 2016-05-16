@@ -1,12 +1,3 @@
-@font-face{ 
-    font-family: 'TitilliumWeb';
-    src: url('../font/titilliumweb-regular.eot');
-    src: url('../font/titilliumweb-regular.eot?#iefix') format('embedded-opentype'),
-         url('../font/titilliumweb-regular.woff') format('woff'),
-         url('../font/titilliumweb-regular.ttf') format('truetype'),
-         url('../font/titilliumweb-regular.png#webfont') format('png');
-}
-
 body {
     background: url('../img/bg.jpeg');
     background-size: cover;
@@ -20,25 +11,25 @@ header {
 }
 
 h1 {
-    color: #fb8713;
+    color: $primary-color;
     font-family: 'Times New Roman', serif;
-    font-size: 39px;
+    font-size: 40px;
     font-weight: normal;
 }
 
 h2 {
-    border-top: 1px burlywood dotted;
-    color: burlywood;
-    font-size: 18px;
+    border-top: 1px $secondary-color dotted;
+    color: $secondary-color;
+    font-size: 22px;
     letter-spacing: 1px;
-    margin: -20px auto 0 auto;
+    margin: -19px auto 0 auto;
     padding: 11px;
     text-transform: uppercase;
     width: 55%;
 }
 
 h5 {
-    color: #fb8713;
+    color: $primary-color;
     display: inline-block;
     float: left;
     font-size: 18px;
@@ -55,13 +46,13 @@ h5 {
     text-align: center;
     transform: translate(-50%, -50%);
     top: 50%;
-    width: 600px;
+    width: $content-width;
 }
 
 #about {
     color: #fff;
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 25px;
+    font-size: 20px;
 }
 
 #avatar {
@@ -74,22 +65,27 @@ h5 {
     list-style: none;
     margin-top: 25px;
     padding: 0;
+
+    li {
+        display: inline-flex;
+        margin: 0 5px;
+    }
+    
+    .sn {
+        background: $secondary-color url('../img/sn-sprite.png') no-repeat;
+        border-radius: 100px;
+        color: transparent;
+        display: inline-block;
+        height: 24px;
+        padding: 9px;
+        width: 24px;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
 }
 
-#social-networks li {
-    display: inline-flex;
-    margin: 0 5px;
-}
-
-#social-networks .sn {
-    background: burlywood url('../img/sn-sprite2.png') no-repeat;
-    border-radius: 100px;
-    color: transparent;
-    display: inline-block;
-    height: 24px;
-    padding: 9px;
-    width: 24px;
-}
 
 .fb {
     background-position: -1px 9px !important;
@@ -113,25 +109,4 @@ h5 {
 
 .lfm {
     background-position: -34px -59px !important;
-}
-
-#social-networks .sn:hover {
-    background-color: #fb8713;
-}
-
-/**
- * Firefox fixes
- */
-@-moz-document url-prefix() { 
-    body {
-        padding: 10%;
-    }
-
-    h2 {
-        letter-spacing: 0;
-    }
-
-    #centered {
-        margin: 10% 0;
-    }
 }

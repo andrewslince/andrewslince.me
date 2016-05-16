@@ -1,0 +1,18 @@
+# Exclude paths and files during build project
+exclude: [
+  "node_modules",
+  "img/src-sprite",
+  "Gruntfile.js",
+  "package.json",
+  "README.md",
+  "LICENSE"
+]
+
+# Site settings
+version: "v1.0.0"
+email: andrews.lince@gmail.com
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://andrewslince.me" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
