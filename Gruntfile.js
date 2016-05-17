@@ -77,7 +77,7 @@ module.exports = function(grunt) {
                 ],
                 spawn: true,
                 atBegin: true,
-                livereload: true
+                livereload: 12345
             },
 
             images: {
