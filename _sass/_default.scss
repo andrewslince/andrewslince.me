@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    border-top: 1px $secondary-color dotted;
+    border-top: 1px #777 solid;
     color: $secondary-color;
     font-size: 22px;
     letter-spacing: 1px;
@@ -61,6 +61,20 @@ h5 {
     color: #fff;
     line-height: 28px;
     font-size: 20px;
+
+    a {
+        border-bottom: 1px $link-color dotted;
+        color: $link-color;
+        margin: 0 2px 0 2px;
+        padding: 0 1px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: $link-color;
+            color:#ffe7ed;
+        }
+    }
 }
 
 #avatar {
