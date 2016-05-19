@@ -3,30 +3,33 @@ layout: default
 title: "Andrews Lince | Desenvolvedor Web Sênior"
 ---
 
-<div id="centered">
+<div id="centered" itemscope itemtype="http://schema.org/Person">
     <header>
         <img
+            itemprop="image"
             id="avatar"
             src="../img/avatar.jpg"
             alt="Foto de perfil de Andrews Lince"
         >
-        <h1>Andrews Lince</h1>
-        <h2>Desenvolvedor Web Sênior</h2>
+        <h1 itemprop="name">Andrews Lince</h1>
+        <h2 itemprop="jobTitle">Desenvolvedor Web Sênior</h2>
     </header>
     <main role="main">
         <div id="about">
             <p>Olá! =)</p>
 
             <p>Me chamo <strong>Andrews Lince Andrade da Costa</strong>, tenho
-            28 anos, 3 filhos e moro na cidade de Manaus, no estado do
-            Amazonas.</p>
+            28 anos, 3 filhos e moro na cidade de
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="addressCountry" content="BR">
+            <span itemprop="addressLocality">Manaus</span>, no estado do
+            Amazonas<meta itemprop="addressRegion" content="AM"></span>.</p>
 
             <p>Sou Bacharel em Sistemas de Informação, possuo <strong>8 anos de
-            experiência</strong> com aplicações web em PHP, bem como
-            uma série de outras tecnologias frontend
-            (<strong>Full Stack Development</strong>). Atualmente, trabalho como
-            <strong>Desenvolvedor Sênior</strong> na
-            <a href="http://neemu.com/" target="_blank">Neemu</a>.</p>
+            experiência</strong> com aplicações web em PHP, bem como uma série
+            de outras tecnologias frontend (<strong>Full Stack Development</strong>).
+            Atualmente, trabalho como <strong>Desenvolvedor Sênior</strong> na
+            <a href="http://neemu.com/" target="_blank" itemprop="worksFor">Neemu</a>.</p>
 
             <p>Também sou entusiasta de iniciativas de cunho social e um dos
             criadores do projeto colaborativo
@@ -36,56 +39,69 @@ title: "Andrews Lince | Desenvolvedor Web Sênior"
         </div>
     </main>
     <footer>
-        <h5>{{ site.email }}</h5>
-        <ul id="social-networks">
-            <li>
-                <a
-                    target="_blank"
-                    class="sn in"
-                    href="https://www.linkedin.com/in/andrewslince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social Linkedin"
-                >LinkedIn</a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    class="sn gh"
-                    href="https://github.com/andrewslince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social GitHub"
-                >GitHub</a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    class="sn ig"
-                    href="https://www.instagram.com/andrewslince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social Instagram"
-                >Instagram</a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    class="sn fb"
-                    href="https://www.facebook.com/andrews.lince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social Facebook"
-                >Facebook</a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    class="sn go"
-                    href="https://plus.google.com/+AndrewsLince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social Google Plus"
-                >Google Plus</a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    class="sn lfm"
-                    href="http://www.last.fm/user/andrews_lince"
-                    alt="Ícone com link para o perfil de Andrews Lince na rede social Last.fm"
-                >Last.fm</a>
-            </li>
-        </ul>
+        <h5>
+            <a href="mailto:{{ site.email }}">
+                <span itemprop="email">{{ site.email }}</span>
+            </a>
+        </h5>
+        <span itemscope itemtype="http://schema.org/Organization">
+            <link itemprop="url" href="http://andrewslince.me">
+            <ul id="social-networks">
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn in"
+                        href="https://www.linkedin.com/in/andrewslince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social Linkedin"
+                    >LinkedIn</a>
+                </li>
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn gh"
+                        href="https://github.com/andrewslince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social GitHub"
+                    >GitHub</a>
+                </li>
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn ig"
+                        href="https://www.instagram.com/andrewslince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social Instagram"
+                    >Instagram</a>
+                </li>
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn fb"
+                        href="https://www.facebook.com/andrews.lince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social Facebook"
+                    >Facebook</a>
+                </li>
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn go"
+                        href="https://plus.google.com/+AndrewsLince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social Google Plus"
+                    >Google Plus</a>
+                </li>
+                <li>
+                    <a
+                        itemprop="sameAs"
+                        target="_blank"
+                        class="sn lfm"
+                        href="http://www.last.fm/user/andrews_lince"
+                        alt="Ícone com link para o perfil de Andrews Lince na rede social Last.fm"
+                    >Last.fm</a>
+                </li>
+            </ul>
+        </span>
     </footer>
 </div>

@@ -41,6 +41,20 @@ h5 {
     font-weight: normal;
 }
 
+a {
+    border-bottom: 1px $link-color dotted;
+    color: $link-color;
+    margin: 0 2px 0 2px;
+    padding: 0 1px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background-color: $link-color;
+        color:#ffe7ed;
+    }
+}
+
 #centered {
     background: #000;
     left: 50%;
@@ -61,20 +75,6 @@ h5 {
     color: #fff;
     line-height: 28px;
     font-size: 20px;
-
-    a {
-        border-bottom: 1px $link-color dotted;
-        color: $link-color;
-        margin: 0 2px 0 2px;
-        padding: 0 1px;
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-            background-color: $link-color;
-            color:#ffe7ed;
-        }
-    }
 }
 
 #avatar {
